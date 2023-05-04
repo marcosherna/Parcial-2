@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Sigmar&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sigmar&display=swap');
+
+
+
+:root{
+    --degradado:linear-gradient(270.13deg, #DD0606 9.34%, #18000F 98.89%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, main{
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+nav{
+    background: var(--degradado);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo{
+    height: 65px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 5rem;
+}
+a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+li , a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a:hover{
+    background-color: #B70000;
+}
+
+li:nth-child(1) a:hover{
+    background-color: transparent;
+}
+a > img {
+    height: 25px;
+    padding-right: 7px;
+}
+
+
+section{
+    height: 920px;
+    width: 100%;
+    background-color: #DD0606;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+#Calendario, #Mas{
+    background-color: #FFFFFF;
+}
+
+#Home, #Articulos{
+    background-color: #E9E9E9;
+}
+
+section > h1{
+    text-align: center;
+    padding-top: 6rem;
+    font-family: 'Sigmar', cursive;
+    font-size: 3rem;
+    letter-spacing: 5px;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image:var(--degradado);
+}
+
+.img-tren{
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.img-ciudad{
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+}
+
+#Banner{
+    height: fit-content;
+    width: 100%;
+}
+
+
+.banner-img{
+    height: 1004px;
+    width: 100%;
+    background-image: url('../img/13380024_5215212.jpg');
+    background-size: cover;
+}
+
+
+footer{
+    background-color: #B70000;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+}
+.container-name h2{
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.container-icon-social-media{
+    display: flex;
+    gap: 2rem;
+}
+.icon-social-media{
+    height: 30px;
+}
